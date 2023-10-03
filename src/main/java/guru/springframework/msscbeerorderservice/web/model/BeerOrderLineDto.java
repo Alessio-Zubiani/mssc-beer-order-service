@@ -1,5 +1,6 @@
 package guru.springframework.msscbeerorderservice.web.model;
 
+import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -27,8 +28,12 @@ public class BeerOrderLineDto extends BaseItem {
     
     private String beerName;
     
+    private String beerStyle;
+    
     private UUID beerId;
     
     private Integer orderQuantity = 0;
+    
+    private BigDecimal price;
 	
 }
